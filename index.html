@@ -14,7 +14,14 @@
           <div class="logo">
             <span>in[time]</span>
           </div>
-          <div class="menu"></div>
+          <div class="menu">
+            <ul class="menu_list">
+              <li class="menu_item"><a href="">Timemarch</a></li>
+              <li class="menu_item"><a href="">Timer</a></li>
+              <li class="menu_item"><a href="">Future</a></li>
+              <li class="menu_item"><a href="">Your Time</a></li>
+            </ul>
+          </div>
           <div class="navigation">
             <ul class="nav__list">
               <li class="nav__item"><a href="">Timemarch</a></li>
@@ -34,7 +41,7 @@
           </div>
         </div>
         <div class="image_block">
-          <!-- <img src="./img/image_promo.jpg" alt="image"> -->
+          <img src="./img/image_promo.jpg" alt="image" />
         </div>
       </div>
 
@@ -43,7 +50,7 @@
           <div class="subtitle">
             //The actual drawings are hidden by secrecy and time
           </div>
-          <div class="title">TIME MACHINE</div>
+          <div class="title">//TIME MACHINE</div>
           <div class="info">
             *Hypothetical device that allows time travel, traveling to the past
             or future. The basic principle of the time machine is to create a
@@ -57,43 +64,46 @@
         <div class="image_machine">
           <img src="./img/time_machine.svg" alt="time_machine" />
         </div>
+        <marquee behavior="" direction="" class="marquee">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla
+          explicabo non in asperiores adipisci labore ab iure optio,
+          consequatur, minus, maiores perferendis quia unde aspernatur ducimus
+          repellat alias. Adipisci.</marquee
+        >
       </div>
-
-      <marquee behavior="" direction="" class="marquee">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla
-        explicabo non in asperiores adipisci labore ab iure optio, consequatur,
-        minus, maiores perferendis quia unde aspernatur ducimus repellat alias.
-        Adipisci.</marquee
-      >
 
       <div class="check_block">
         <div class="title_block">
-          <div class="title">CHECK YOUR LIFETIME</div>
+          <div class="title">
+            CHECK YOUR <br />
+            LIFETIME
+            <img src="./img/more-button.svg" alt="more-button" />
+          </div>
         </div>
         <div class="check">
           <div class="check_container">
             <div class="date_frame">
-              <div class="number">23</div>
+              <div id="years" class="number">0</div>
               <div class="number_label">years</div>
             </div>
             <div class="date_frame">
-              <div class="number">23</div>
+              <div id="months" class="number">0</div>
               <div class="number_label">months</div>
             </div>
             <div class="date_frame">
-              <div class="number">23</div>
+              <div id="days" class="number">0</div>
               <div class="number_label">days</div>
             </div>
             <div class="date_frame">
-              <div class="number">23</div>
+              <div id="hours" class="number">0</div>
               <div class="number_label">hours</div>
             </div>
             <div class="date_frame">
-              <div class="number">23</div>
+              <div id="minutes" class="number">0</div>
               <div class="number_label">mins</div>
             </div>
             <div class="date_frame">
-              <div class="number">23</div>
+              <div id="seconds" class="number">0</div>
               <div class="number_label">secs</div>
             </div>
           </div>
@@ -102,10 +112,70 @@
               <div class="btn">Check Your Time</div>
               <div class="btn">Reset The Counter</div>
             </div>
-            <div class="btn">Sell Your Life</div>
+            <div class="btn sell_btn">Sell Your Life</div>
+          </div>
+          <div class="sell_menu_overlay">
+            <div class="sell_menu">
+              <div class="sell_menu_title">//TIME MACHINE PT.01</div>
+              <div class="sell_menu_content">
+                <div class="sell_menu_info">
+                  Time is the path that leads us to the future, shaping every
+                  possibility and choice. The future is not a distant,
+                  unreachable place — it is constantly forming in the present
+                  moment. Every second that passes becomes a foundation for what
+                  comes next.
+                  <div class="sell_menu_btn_ok">OK</div>
+                </div>
+
+                <img src="./img/modal-image.png" alt="sell_menu_image" />
+                <div class="sell_menu_close">CLOSE</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="predictions_block">
+        <div class="predictions_title">
+          <div class="title">PREDICTIONS FOR YOU</div>
+          <div class="subtitles">
+            <p class="subtitles_text">// It can be very cruel! Be careful!!</p>
+            <p class="subtitles_text">// Take care of your psyche!</p>
+          </div>
+        </div>
+        <div class="predictions_images">
+          <div class="predictions_image">
+            <img src="./img/Prediction_image_1.png" alt="Prediction image 1" />
+          </div>
+          <div class="predictions_image">
+            <img src="./img/Prediction_image_2.png" alt="Prediction image 2" />
+          </div>
+          <div class="predictions_arrow">
+            <img src="./img/arrow.svg" alt="arrow" />
+          </div>
+        </div>
+        <div class="prediction_btn">Generate Prediction</div>
+      </div>
+      <div class="yourTime_block">
+        <div class="yourTime_title">
+          <p>YOUR TIME</p>
+          <img src="./img/Line.svg" alt="Line" />
+          <p>Your Life</p>
+        </div>
+        <div class="clock_block">
+          <img src="./img/clock.svg" alt="clock" />
+        </div>
+        <div class="stop_btn">Stop Your Time</div>
+      </div>
+      <footer class="footer">
+        <div class="footer_title">
+          <p>HSE ART</p>
+          <p>And Design School</p>
+        </div>
+        <div class="footer_sign">
+          <p>Chursin Vlad</p>
+          <p>BP24DZ09</p>
+        </div>
+      </footer>
     </div>
   </body>
   <script src="./js/script.js"></script>
