@@ -129,7 +129,7 @@ body {
 }
 
 @media (max-width: 1260px) {
-  .title_block .title {
+  .promo_block .title_block .title {
     font-size: 120px;
     letter-spacing: -5px;
   }
@@ -433,11 +433,67 @@ body {
     font-size: 85px;
     letter-spacing: -5px;
   }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 70px;
+    letter-spacing: -5px;
+  }
+
+  .yourTime_block .arrow {
+    margin: 80px 0;
+  }
+
+  .yourTime_block .arrow1 {
+    margin: 40px 0 80px 0;
+  }
+
+  .footer p {
+    font-size: 40px;
+  }
 }
 
-@media (max-width: 600px) {
-  .title_block .title {
-    font-size: 90px;
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .check_block .btns .btn {
+    padding: 15px 20px;
+  }
+
+  .predictions_block .predictions_title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 100px;
+    letter-spacing: -5px;
+  }
+
+  .predictions_block .predictions_title .subtitles {
+    margin-top: -100px;
+  }
+
+  .predictions_block .predictions_images .predictions_image2 {
+    display: none;
+  }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 700px) {
+  .promo_block .title_block .title {
+    font-size: 100px;
     letter-spacing: -5px;
   }
 
@@ -467,7 +523,7 @@ body {
   }
 
   .title_block .title {
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: -2px;
   }
 
@@ -479,6 +535,87 @@ body {
 
   .image_block {
     margin: 10px;
+  }
+
+  .check_block .btns .btn {
+    padding: 15px 60px;
+  }
+
+  .check_block .btns .left-side_btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .check_block .btns .sell_btn {
+    height: 25px;
+    text-align: center;
+  }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 50px;
+    letter-spacing: -2px;
+  }
+
+  .footer p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .check_block .check .number {
+    font-size: 180px;
+  }
+
+  .check_block .btns {
+    display: block;
+    font-size: 25px;
+    font-family: Suisse Light;
+  }
+
+  .check_block .btns .left-side_btns {
+    gap: 10px;
+  }
+
+  .check_block .btns .btn {
+    padding: 15px 50px;
+    font-size: 26px;
+  }
+
+  .check_block .btns .sell_btn {
+    height: 20px;
+    margin-top: 10px;
+  }
+
+  .predictions_block .predictions_title {
+    display: flex;
+    gap: 0px;
+    align-items: flex-start;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 80px;
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+  }
+
+  .predictions_block .predictions_title .subtitles {
+    margin-top: 0px;
+  }
+
+  .predictions_block .predictions_images {
+    margin-top: 40px;
+  }
+
+  .yourTime_block .yourTime_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 80px;
+    letter-spacing: -2px;
   }
 }
 
@@ -559,16 +696,6 @@ body {
   right: 30px;
   top: 30px;
   border: 2px solid black;
-}
-
-@media (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-  .nav__list {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .menu {
@@ -770,7 +897,7 @@ body {
   font-family: Suisse Regular;
 }
 
-.predictions_title .predictions_title .subtitles_text {
+.predictions_title .subtitles .subtitles_text {
   font-family: Suisse Regular;
 }
 
