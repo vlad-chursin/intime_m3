@@ -60,7 +60,7 @@
             //The actual drawings are hidden by secrecy and time
           </div>
           <div class="title">//TIME MACHINE</div>
-          <div class="info">
+          <div class="information">
             *Hypothetical device that allows time travel, traveling to the past
             or future. The basic principle of the time machine is to create a
             curvature of space-time, which allows one to bypass the laws of
@@ -117,10 +117,10 @@
           </div>
           <div class="btns">
             <div class="left-side_btns">
-              <div class="btn">Check Your Time</div>
-              <div class="btn">Reset The Counter</div>
+              <div class="btn" id="btn_check">Check Your Time</div>
+              <div class="btn" id="btn_reset">Reset The Counter</div>
             </div>
-            <div class="btn sell_btn">Sell Your Life</div>
+            <div class="btn sell_btn" id="btn">Sell Your Life</div>
           </div>
           <div class="sell_menu_overlay">
             <div class="sell_menu">
@@ -152,8 +152,12 @@
           </div>
         </div>
         <div class="predictions_images">
-          <div class="predictions_image" id="predictions_image"></div>
-          <div class="predictions_image" id="predictions_image2"></div>
+          <div class="predictions_image" id="predictions_image">
+            <img src="./img/image_promo.jpg" alt="" srcset="" />
+          </div>
+          <div class="predictions_image" id="predictions_image2">
+            <img src="./img/image_promo.jpg" alt="" srcset="" />
+          </div>
           <div class="predictions_arrow">
             <img src="./img/arrow.svg" alt="arrow" />
           </div>
@@ -170,7 +174,54 @@
           <p>Your Life</p>
         </div>
         <div class="clock_block">
-          <img src="./img/clock.svg" alt="clock" />
+          <div class="arrow">
+            <ul class="num">
+              <li>
+                <div class="moments">10</div>
+              </li>
+              <li>
+                <div class="moments">11</div>
+              </li>
+              <li>
+                <div class="moments">12</div>
+              </li>
+              <li>
+                <div class="moments">1</div>
+              </li>
+              <li>
+                <div class="moments">2</div>
+              </li>
+            </ul>
+          </div>
+          <div class="arrow">
+            <ul class="num">
+              <li>
+                <div class="moments">9</div>
+              </li>
+              <li>
+                <div class="moments">3</div>
+              </li>
+            </ul>
+          </div>
+          <div class="arrow">
+            <ul class="num">
+              <li>
+                <div class="moments">8</div>
+              </li>
+              <li>
+                <div class="moments special">7</div>
+              </li>
+              <li>
+                <div class="moments special">6</div>
+              </li>
+              <li>
+                <div class="moments special">5</div>
+              </li>
+              <li>
+                <div class="moments">4</div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="stop_btn">Stop Your Time</div>
       </div>

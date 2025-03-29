@@ -13,7 +13,8 @@ body {
   gap: 30px;
 }
 
-.nav__item {
+.nav__item,
+.logo {
   padding: 10px;
 }
 
@@ -75,7 +76,7 @@ body {
   opacity: 1;
 }
 
-.title_block .title {
+.promo_block .title_block .title {
   font-family: Suisse Light;
   font-size: 180px;
   letter-spacing: -10px;
@@ -90,6 +91,169 @@ body {
   border: 3px solid black;
 }
 
+@media (max-width: 1440px) {
+  .promo_block .title_block .title {
+    font-size: 150px;
+    letter-spacing: -5px;
+  }
+
+  .time_machine_block .info .subtitle {
+    font-size: 20px;
+  }
+
+  .time_machine_block .info .title {
+    font-size: 120px;
+    letter-spacing: -8px;
+    line-height: 80%;
+    margin-top: 20px;
+  }
+
+  .time_machine_block .info .information {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .time_machine_block .info .button_info {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: Suisse Regular;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 100px;
+    letter-spacing: -6px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .title_block .title {
+    font-size: 120px;
+    letter-spacing: -5px;
+  }
+
+  .time_machine_block .info .subtitle {
+    font-size: 18px;
+  }
+
+  .time_machine_block .info .title {
+    font-size: 110px;
+    letter-spacing: -7px;
+    line-height: 80%;
+    margin-top: 15px;
+  }
+
+  .time_machine_block .info .information {
+    font-size: 22px;
+    margin-top: 35px;
+  }
+
+  .time_machine_block .info .button_info {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    font-family: Suisse Regular;
+  }
+
+  .check_block .title_block .title {
+    font-size: 125px;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 90px;
+    letter-spacing: -6px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .time_machine_block .info .subtitle {
+    font-size: 17px;
+  }
+
+  .time_machine_block .info .title {
+    font-size: 105px;
+    letter-spacing: -7px;
+    line-height: 80%;
+    margin-top: 15px;
+  }
+
+  .time_machine_block .info .information {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .time_machine_block .info .button_info {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: Suisse Regular;
+  }
+
+  .time_machine_block .marquee {
+    font-size: 30px;
+    margin-top: 100px;
+    padding: 25px 0;
+  }
+
+  .check_block {
+    margin-top: 80px;
+  }
+
+  .check_block .title_block .title {
+    font-size: 105px;
+    letter-spacing: -7px;
+  }
+
+  .check_block .check .check_container {
+    padding: 20px;
+  }
+
+  .check_block .check .date_frame {
+    max-width: 90vw;
+  }
+
+  .check_block .check .number {
+    font-family: Suisse Light;
+    font-size: 130px;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 95px;
+    letter-spacing: -7px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .check_block .check .check_container {
+    padding: 18px;
+  }
+
+  .check_block .check .date_frame {
+    max-width: 85vw;
+  }
+
+  .check_block .check .number {
+    font-family: Suisse Light;
+    font-size: 120px;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 80px;
+    letter-spacing: -5px;
+  }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 90px;
+    letter-spacing: -5px;
+  }
+}
+
 @media (max-width: 1024px) {
   .nav__list {
     gap: 15px;
@@ -102,12 +266,12 @@ body {
 
   .header {
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     gap: 20px;
   }
 
   .title_block {
-    margin: 20px;
+    margin: 20px 0;
     gap: 10px;
   }
 
@@ -121,15 +285,162 @@ body {
   }
 
   .image_block {
-    margin: 20px;
+    margin: 20px 0;
     height: 40vh;
     background-image: url(../img/image_promo.jpg);
     object-fit: fill;
-    border: 3px solid black;
+    border: 2px solid black;
+  }
+
+  .title_block .title {
+    font-size: 120px;
+    letter-spacing: -5px;
+  }
+
+  .time_machine_block .info .subtitle {
+    font-size: 12px;
+  }
+
+  .time_machine_block .info .title {
+    font-size: 90px;
+    letter-spacing: -5px;
+    line-height: 80%;
+    margin-top: 25px;
+  }
+
+  .time_machine_block .info .information {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .time_machine_block .info .button_info {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: Suisse Regular;
+  }
+
+  .time_machine_block .marquee {
+    font-size: 25px;
+    margin-top: 80px;
+    padding: 15px 0;
+    bottom: -90px;
+  }
+
+  .check_block {
+    margin-top: 70px;
+  }
+
+  .check_block .title_block .title {
+    font-size: 90px;
+    letter-spacing: -5px;
+  }
+
+  .check_block .check .check_container {
+    padding: 15px;
+  }
+
+  .check_block .check .date_frame {
+    max-width: 80vw;
+  }
+
+  .check_block .check .number {
+    font-family: Suisse Light;
+    font-size: 110px;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 70px;
+    letter-spacing: -5px;
+  }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 85px;
+    letter-spacing: -5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .time_machine_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .time_machine_block .info .subtitle {
+    font-size: 18px;
+  }
+
+  .time_machine_block .info .title {
+    font-size: 120px;
+    letter-spacing: -5px;
+    line-height: 80%;
+    margin-top: 35px;
+  }
+
+  .time_machine_block .info .information {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  .time_machine_block .info .button_info {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: Suisse Regular;
+    font-size: 30px;
+  }
+
+  .time_machine_block .marquee {
+    font-size: 25px;
+    margin-top: 80px;
+    padding: 15px 0;
+    bottom: -90px;
+  }
+
+  .check_block .title_block .title {
+    font-size: 90px;
+    letter-spacing: -5px;
+  }
+
+  .check_block .check .check_container {
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .check_block .check .date_frame {
+    max-width: 100vw;
+  }
+
+  .check_block .check .number {
+    font-family: Suisse Light;
+    font-size: 150px;
+  }
+
+  .predictions_block .predictions_title .title {
+    font-size: 110px;
+    letter-spacing: -5px;
+  }
+
+  .predictions_title .predictions_title .subtitles {
+    text-wrap: wrap;
+  }
+
+  .yourTime_block .yourTime_title p {
+    font-size: 85px;
+    letter-spacing: -5px;
   }
 }
 
 @media (max-width: 600px) {
+  .title_block .title {
+    font-size: 90px;
+    letter-spacing: -5px;
+  }
+
   .nav__list {
     align-items: center;
     gap: 10px;
@@ -219,7 +530,7 @@ body {
   margin-top: 40px;
 }
 
-.time_machine_block .info {
+.time_machine_block .information {
   font-family: Suisse Regular;
   font-size: 30px;
   margin-top: 60px;
@@ -227,10 +538,11 @@ body {
 
 .time_machine_block .button_info {
   padding: 10px;
-  border: 3px solid black;
+  border: 2px solid black;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 50px;
+  font-family: Suisse Regular;
 }
 
 .time_machine_block .image_machine {
@@ -246,6 +558,7 @@ body {
   z-index: 100;
   right: 30px;
   top: 30px;
+  border: 2px solid black;
 }
 
 @media (min-width: 768px) {
@@ -276,9 +589,10 @@ body {
   margin-top: 100px;
 }
 
-.check_block .title_block .title {
+.check_block .title {
   font-family: Suisse Light;
   font-size: 140px;
+  letter-spacing: -10px;
 }
 
 .check {
@@ -309,11 +623,33 @@ body {
   font-size: 25px;
   font-family: Suisse Light;
 }
-.btn {
+
+.btns .btn {
   padding: 15px 30px;
   border: 2px solid black;
   cursor: pointer;
 }
+
+#btn_check.active {
+  animation: pulse 5s infinite;
+  border-width: 2px;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: rgb(0, 0, 0);
+  }
+  40% {
+    border-color: rgb(116, 116, 116);
+  }
+  70% {
+    border-color: rgb(205, 205, 205);
+  }
+  100% {
+    border-color: rgb(0, 0, 0);
+  }
+}
+
 .left-side_btns {
   display: flex;
   gap: 25px;
@@ -426,13 +762,18 @@ body {
   letter-spacing: -8px;
 }
 
-.predictions_title .subtitles {
+.predictions_title .predictions_title .subtitles {
   display: flex;
   flex-direction: column;
   gap: 5px;
   text-wrap: nowrap;
   font-family: Suisse Regular;
 }
+
+.predictions_title .predictions_title .subtitles_text {
+  font-family: Suisse Regular;
+}
+
 .predictions_block {
   margin-top: 100px;
 }
@@ -518,6 +859,29 @@ body {
   width: 100%;
   height: 100%;
   min-width: 100px;
+}
+
+.yourTime_block .clock_block {
+  width: 100%;
+}
+
+.yourTime_block .clock_block .arrow {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+}
+
+.yourTime_block .clock_block ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.yourTime_block .clock_block .moments {
+  font-family: Suisse Light;
+  font-size: 80px;
+  min-width: 80px;
+  text-align: center;
 }
 
 .stop_btn {

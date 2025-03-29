@@ -170,3 +170,9 @@ button.addEventListener("click", () => {
   container.appendChild(img);
   container2.appendChild(img2);
 });
+
+const button_check = document.getElementById("btn_check");
+
+button_check.addEventListener("click", () => {
+  button_check.classList.toggle("active");
+});
