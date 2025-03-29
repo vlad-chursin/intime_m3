@@ -1,3 +1,37 @@
+document.querySelectorAll(".smooth").forEach((link) => {
+  link.addEventListener("click", function (smooth_control) {
+    smooth_control.preventDefault();
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
+
+const tooltip = document.querySelector(".tooltip");
+const buttons = document.querySelectorAll(".button_more");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("mouseenter", (e) => {
+    const message = e.target.getAttribute("data-tooltip");
+    tooltip.textContent = message;
+    tooltip.classList.add("show");
+
+    const rect = e.target.getBoundingClientRect();
+    tooltip.style.left = `${rect.left + rect.width / 2}px`;
+    tooltip.style.top = `${rect.top - 30}px`;
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    tooltip.classList.remove("show");
+  });
+});
+
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menu");
 
@@ -106,4 +140,33 @@ sellMenuClose.addEventListener("click", () => {
 });
 sellMenuOk.addEventListener("click", () => {
   sellMenu.classList.remove("sell_menuIsOpen");
+});
+
+const images = [
+  "./img/predictions/Prediction_image_1.png",
+  "./img/predictions/Prediction_image_2.png",
+];
+
+const button = document.getElementById("prediction_btn");
+const container = document.getElementById("predictions_image");
+const container2 = document.getElementById("predictions_image2");
+
+button.addEventListener("click", () => {
+  container.innerHTML = "";
+  container2.innerHTML = "";
+
+  const randomImageIndex = Math.floor(Math.random() * images.length);
+  const randomImagePath = images[randomImageIndex];
+
+  const randomImageIndex2 = Math.floor(Math.random() * images.length);
+  const randomImagePath2 = images[randomImageIndex2];
+
+  const img = document.createElement("img");
+  img.src = randomImagePath;
+
+  const img2 = document.createElement("img");
+  img2.src = randomImagePath2;
+
+  container.appendChild(img);
+  container2.appendChild(img2);
 });

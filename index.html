@@ -9,10 +9,10 @@
   </head>
   <body>
     <div id="app">
-      <div class="promo_block">
+      <div class="promo_block" id="promo_block">
         <div class="header">
           <div class="logo">
-            <span>in[time]</span>
+            <a href="#promo_block"><span>in[time]</span></a>
           </div>
           <div class="menu">
             <ul class="menu_list">
@@ -24,10 +24,18 @@
           </div>
           <div class="navigation">
             <ul class="nav__list">
-              <li class="nav__item"><a href="">Timemarch</a></li>
-              <li class="nav__item"><a href="">Timer</a></li>
-              <li class="nav__item"><a href="">Future</a></li>
-              <li class="nav__item"><a href="">Your Time</a></li>
+              <li class="nav__item">
+                <a href="#timemarch" class="smooth">Timemarch</a>
+              </li>
+              <li class="nav__item">
+                <a href="#time" class="smooth">Timer</a>
+              </li>
+              <li class="nav__item">
+                <a href="#future" class="smooth">Future</a>
+              </li>
+              <li class="nav__item">
+                <a href="#your_time" class="smooth">Your Time</a>
+              </li>
             </ul>
           </div>
           <div class="burger">
@@ -36,16 +44,17 @@
         </div>
         <div class="title_block">
           <div class="title">//FUTURE IS HERE</div>
-          <div class="button_more">
+          <div class="button_more" data-tooltip="Future Is Dangerous!">
             <img src="./img/more-button.svg" alt="more-button" />
           </div>
+          <div class="tooltip"></div>
         </div>
         <div class="image_block">
           <img src="./img/image_promo.jpg" alt="image" />
         </div>
       </div>
 
-      <div class="time_machine_block">
+      <div class="time_machine_block" id="timemarch">
         <div class="info">
           <div class="subtitle">
             //The actual drawings are hidden by secrecy and time
@@ -65,14 +74,13 @@
           <img src="./img/time_machine.svg" alt="time_machine" />
         </div>
         <marquee behavior="" direction="" class="marquee">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla
-          explicabo non in asperiores adipisci labore ab iure optio,
-          consequatur, minus, maiores perferendis quia unde aspernatur ducimus
-          repellat alias. Adipisci.</marquee
+          Traveling is dangerous! We are not responsible for your safety and
+          identity // Traveling is dangerous! We are not responsible for your
+          safety and identity</marquee
         >
       </div>
 
-      <div class="check_block">
+      <div class="check_block" id="time">
         <div class="title_block">
           <div class="title">
             CHECK YOUR <br />
@@ -134,7 +142,8 @@
           </div>
         </div>
       </div>
-      <div class="predictions_block">
+
+      <div class="predictions_block" id="future">
         <div class="predictions_title">
           <div class="title">PREDICTIONS FOR YOU</div>
           <div class="subtitles">
@@ -143,19 +152,18 @@
           </div>
         </div>
         <div class="predictions_images">
-          <div class="predictions_image">
-            <img src="./img/Prediction_image_1.png" alt="Prediction image 1" />
-          </div>
-          <div class="predictions_image">
-            <img src="./img/Prediction_image_2.png" alt="Prediction image 2" />
-          </div>
+          <div class="predictions_image" id="predictions_image"></div>
+          <div class="predictions_image" id="predictions_image2"></div>
           <div class="predictions_arrow">
             <img src="./img/arrow.svg" alt="arrow" />
           </div>
         </div>
-        <div class="prediction_btn">Generate Prediction</div>
+        <button class="prediction_btn" id="prediction_btn">
+          Generate Prediction
+        </button>
       </div>
-      <div class="yourTime_block">
+
+      <div class="yourTime_block" id="your_time">
         <div class="yourTime_title">
           <p>YOUR TIME</p>
           <img src="./img/Line.svg" alt="Line" />
@@ -169,7 +177,7 @@
       <footer class="footer">
         <div class="footer_title">
           <p>HSE ART</p>
-          <p>And Design School</p>
+          <p>AND DESIGN SCHOOL</p>
         </div>
         <div class="footer_sign">
           <p>Chursin Vlad</p>
