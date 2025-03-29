@@ -145,6 +145,17 @@ sellMenuOk.addEventListener("click", () => {
 const images = [
   "./img/predictions/Prediction_image_1.png",
   "./img/predictions/Prediction_image_2.png",
+  "./img/predictions/Prediction_image_3.jpg",
+  "./img/predictions/Prediction_image_4.jpg",
+  "./img/predictions/Prediction_image_5.jpg",
+  "./img/predictions/Prediction_image_6.jpg",
+  "./img/predictions/Prediction_image_7.jpg",
+  "./img/predictions/Prediction_image_8.jpg",
+  "./img/predictions/Prediction_image_9.jpg",
+  "./img/predictions/Prediction_image_10.jpg",
+  "./img/predictions/Prediction_image_11.jpg",
+  "./img/predictions/Prediction_image_12.jpg",
+  "./img/predictions/Prediction_image_13.jpg",
 ];
 
 const button = document.getElementById("prediction_btn");
