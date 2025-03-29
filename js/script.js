@@ -187,3 +187,48 @@ const button_check = document.getElementById("btn_check");
 button_check.addEventListener("click", () => {
   button_check.classList.toggle("active");
 });
+
+const stop_button = document.getElementById("stop_btn");
+const overlay = document.getElementById("fullscreen-overlay");
+
+stop_button.addEventListener("click", () => {
+  document.body.style.backgroundColor = "black";
+
+  overlay.style.opacity = "1";
+
+  setTimeout(() => {
+    document.body.style.backgroundColor = "";
+    overlay.style.opacity = "0";
+  }, 10000);
+});
+
+const timeButton = document.getElementById("time_btn");
+const moments = document.querySelectorAll(".yourTime_block .moments");
+const arrows = document.querySelectorAll(".yourTime_block .arrow");
+
+timeButton.addEventListener("click", () => {
+  arrows.forEach((arrow) => {
+    arrow.style.transform = "scale(0.9)";
+  });
+
+  moments.forEach((moment, index) => {
+    setTimeout(() => {
+      moment.classList.add("time-distortion");
+
+      const xShift = Math.random() * 100 - 50;
+      const yShift = Math.random() * 60 - 30;
+      moment.style.transform = `translate(${xShift}px, ${yShift}px)`;
+
+      setTimeout(() => {
+        moment.classList.remove("time-distortion");
+        moment.style.transform = "";
+      }, 2000);
+    }, index * 100);
+  });
+
+  setTimeout(() => {
+    arrows.forEach((arrow) => {
+      arrow.style.transform = "";
+    });
+  }, moments.length * 100 + 1000);
+});
